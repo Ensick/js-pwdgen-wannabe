@@ -4,21 +4,34 @@
     box-sizing: border-box;
 }
 
-
-body{
-    position: relative;
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
 .cont{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: lightblue;
     padding: 50px;
     border-radius: 25px;
     box-shadow: 2px 2px 20px black;
+}
+
+.cont{
+    animation: effetto 2s linear;
+}
+
+@keyframes effetto {
+    0%{
+        scale: 0;
+        rotate: 0;
+    }
+
+    100%{
+        scale: 1;
+        rotate: 360deg;
+    }
 }
 
 .style{
@@ -31,3 +44,4 @@ body{
 .pswrd{
     font-size: 3rem;
 }
+
